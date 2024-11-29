@@ -29,5 +29,9 @@
 		<input type="date" name="time_limit" />
 		<input type="submit" value="追加" />
 	</form>
+	
+	<form method="post" th:action="@{/delete}">
+		<input type="submit" value="完了済みを削除" />
+	</form>
 </body>
 </html>
