@@ -36,6 +36,12 @@ public class TodoController {
 	@RequestMapping(value="/update")
 	public String update(Todo todo) {
 		todoMapper.update(todo);
-		return "redirect:";
+		return "redirect:/";
+	}
+	
+	@RequestMapping(value="/delete")
+	public String delete() {
+		todoMapper.delete();
+		return "redirect:/";
 	}
 }
